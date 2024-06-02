@@ -65,7 +65,7 @@ canvas{
 @media screen and (max-width: 480px) {
     #particles-js{ 
         
-        height: 90%; 
+        height: 100%; 
          
     } 
 }
