@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="particle-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>          
+    </head>
+
+    <body>
+        <header>
+            <nav class="header">
+                <div class="logo">
+                    <img src="./images/icon.png" alt="Programmer logo">
+                </div>
+                <ul class="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="particles-js"></div>
+            <section class="home" id="home">
+                <div class="description">
+                    <h1>Hi,<br><hr>I'm <span class="red">Hannan</span><br><hr><span id="auto-typing" ></span></h1>
+                    <button>Contact</button>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/abdul-hannan-amir-586b95258/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/PERPELEX" target="blank"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/ABDULHANNANAMI2?t=aVH8OhZmCNgbGw4qvbYiTA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:hannanamir420@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="pfp-container">
+                    <img src="./images/pfp.jpg" alt="Profile Pic"/>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <h2>About</h2>
+                <div class="card-cont">
+                    <img src="./images/card-pic.jpg" alt="Profile Pic"/>
+                    <div class="info">
+                        <h3>Hollo</h3>
+                        <p>Hardworking software engineering student in my second year at NUST 26, I've discovered my passion for web development. I thoroughly enjoy immersing myself in coding and tackling new challenges head-on. My adaptability allows me to thrive in various projects and scenarios. One of the most rewarding experiences I've had so far was being part of Project ASPCO. This endeavor not only provided me with numerous learning opportunities but also helped me grow both personally and professionally.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>Skills</h2>
+                <div class="skill-grid">
+                    <div id="html">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div id="css">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div id="js">
+                        <i class="fab fa-js"></i>
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div id="react">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div id="java">
+                        <i class="fab fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                    <div id="cpp">
+                        <i class="fab fa-cuttlefish"></i>
+                        <p>C++</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <a><div id="cont1"><p>Tetris</p></div></a>
+                    <a><div id="cont2"><p>EBill</p></div></a>
+                    <a><div id="cont3"><p>Landing Page</p></div></a>
+                    <a><div id="cont4"><p>Coming Soon</p></div></a>
+                    <a><div id="cont5"><p>Coming Soon</p></div></a>
+                    <a><div id="cont6"><p>Coming Soon</p></div></a>
+                </div>
+                <button aria-label="Download Resume">Resume</button>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <form class="form" action="contact.php" method="post">
+                    <input class="credentials" id="name" type="text" placeholder="Name">
+                    <input class="credentials" id="email" type="email" placeholder="Email">
+                    <textarea class="credentials message" id="message" placeholder="Message"></textarea>
+                    <button type="submit" value="Submit" aria-label="Send EMail">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h3>Hannan</h3>
+            <div class="icons-footer">
+                <a href="https://www.linkedin.com/in/abdul-hannan-amir-586b95258/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/PERPELEX" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/ABDULHANNANAMI2?t=aVH8OhZmCNgbGw4qvbYiTA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:hannanamir420@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2021 copyright all right reserved</p>
+        </footer>
+        <script>
+            particlesJS('particles-js',
+              {
+                "particles": {
+                  "number": {
+                    "value": 80,
+                    "density": {
+                      "enable": true,
+                      "value_area": 800
+                    }
+                  },
+                  "color": {
+                    "value": "#ffffff"
+                  },
+                  "shape": {
+                    "type": "circle",
+                    "stroke": {
+                      "width": 0,
+                      "color": "#000000"
+                    },
+                    "polygon": {
+                      "nb_sides": 5
+                    },
+                  },
+                  "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                      "enable": false,
+                      "speed": 40,
+                      "size_min": 0.1,
+                      "sync": false
+                    }
+                  },
+                  "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                      "enable": false,
+                      "speed": 1,
+                      "opacity_min": 0.1,
+                      "sync": false
+                    }
+                  },
+                  "line_linked": {
+                    "enable": true,  // Enable linked lines between particles
+                    "distance": 150,  // Maximum distance between linked particles
+                    "color": "#ffffff",  // Color of the lines
+                    "opacity": 0.4,  // Opacity of the lines
+                    "width": 1  // Width of the lines
+                  },
+                  "move": {
+                    "enable": true,  // Enable particle movement
+                    "speed": 6,  // Speed of particle movement
+                    "direction": "none",  // Direction of particle movement
+                    "random": false,  // Whether movement is random
+                    "straight": false,  // Whether particles move in straight lines
+                    "out_mode": "out",  // What happens when particles reach the edge of the canvas
+                    "bounce": false,  // Whether particles bounce off the edges of the canvas
+                    "attract": {  // Whether particles are attracted to each other
+                      "enable": false,
+                      "rotateX": 600,
+                      "rotateY": 1200
+                    }
+                  },
+                },
+                "interactivity": {
+                  "detect_on": "canvas",
+                  "events": {
+                    "onhover": {
+                      "enable": false,
+                      "mode": "repulse"
+                    },
+                    "onclick": {
+                      "enable": false,
+                      "mode": "push"
+                    },
+                    "resize": true
+                  },
+                  "modes": {
+                    "grab": {
+                      "distance": 400,
+                      "line_linked": {
+                        "opacity": 1
+                      }
+                    },
+                    "bubble": {
+                      "distance": 400,
+                      "size": 40,
+                      "duration": 2,
+                      "opacity": 8,
+                      "speed": 3
+                    },
+                    "repulse": {
+                      "distance": 200,
+                      "duration": 0.4
+                    },
+                    "push": {
+                      "particles_nb": 4
+                    },
+                    "remove": {
+                      "particles_nb": 2
+                    }
+                  }
+                },
+                "retina_detect": true
+              }
+            );
+        </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed('#auto-typing', {
+            strings: ['Web Developer', 'Coding Addict','Anime Fan','Badaminton Lover'],
+            typeSpeed: 110,
+            backSpeed: 50,
+            loop: true
+          });
+        </script>
+    </body>
+</html>
