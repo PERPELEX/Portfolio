@@ -238,6 +238,7 @@ hr{
     height: auto;
     padding: 0 15.25%;
     margin-top: 0%;
+    
     padding-top: 6% ;
     color: white;
     font-family: 'Outfit', 'Roboto', sans-serif;
@@ -290,6 +291,7 @@ hr{
     font-size: 1.1rem;
     font-weight: 600;
     padding: 0 30% 0 25%;
+    white-space: nowrap;
 }
 
 #html  {
@@ -308,12 +310,28 @@ hr{
     color:#61dbfb;
 }
 
-#java  {
-    color:#007396;
+#next  {
+    color:#fff;
 }
 
-#cpp {
-    color:#00599c;
+#ts {
+    color:#3178C6;
+}
+
+#tailwind {
+    color:#06B6D4;
+}
+
+#router {
+    color:#CA4245;
+}
+
+#bootstrap {
+    color:#7952B3;
+}
+
+#figma {
+    color:#F24E1E;
 }
 
 .projects{
@@ -324,7 +342,7 @@ hr{
     width: 100%;
     height: auto;
     padding: 0 15.25%;
-    margin-top: 2%;
+    margin-top: 8%;
     padding-top: 6%;
     color: white;
     font-family: 'Outfit', 'Roboto', sans-serif;
@@ -652,7 +670,7 @@ hr{
     }
 
     .projects{
-        margin-top: 40%;
+        margin-top: 60%;
         padding-top: 12%;
     }
 
@@ -755,7 +773,7 @@ hr{
 
     .projects{
         padding: 20% 3% 0 3%;
-        margin-top: 40%;
+        margin-top: 70%;
     }
 
     .contact{
