@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="pfp-container">
-                    <img src="./images/pfp.jpg" alt="Profile Pic"/>
+                    <img src="./images/pfp.JPG" alt="Profile Pic"/>
                 </div>
             </section>
 
@@ -93,12 +93,12 @@
             <section class="projects" id="projects">
                 <h2>Projects</h2>
                 <div class="project-grid">
-                    <a href="https://github.com/PERPELEX/Tetris-repo" target="_blank"><div id="cont1"><p>Tetris</p></div></a>
-                    <a href="https://github.com/PERPELEX/NUST_EBill" target="_blank"><div id="cont2"><p>EBill</p></div></a>
-                    <a href="https://github.com/PERPELEX/CodSoft" target="_blank"><div id="cont3"><p>CodSoft</p></div></a>
-                    <a><div id="cont4"><p>Coming Soon</p></div></a>
-                    <a><div id="cont5"><p>Coming Soon</p></div></a>
-                    <a><div id="cont6"><p>Coming Soon</p></div></a>
+                    <a href="https://github.com/PERPELEX/Ecommerce-Groccery-Store" target="_blank"><div id="cont1"><p>Gocery Store</p></div></a>
+                    <a href="https://github.com/PERPELEX/Lawyer-Management-System" target="_blank"><div id="cont2"><p>Lawyer MS</p></div></a>
+                    <a href="https://github.com/PERPELEX/sgc-relief" target="_blank"><div id="cont3"><p>SGC Relief</p></div></a>
+                    <a href="https://github.com/PERPELEX/Chibi-Coin" target="_blank"><div id="cont4"><p>Wallet App</p></div></a>
+                    <a href="https://github.com/PERPELEX/SigDevsWebsite" target="_blank"><div id="cont5"><p>SigDevs</p></div></a>
+                    <a href="https://github.com/PERPELEX/Evolisyss" target="_blank"><div id="cont6"><p>Comp. Portfolio</p></div></a>
                 </div>
                 <a href="./Abdul Hannan Resume.pdf" download>
                   <button aria-label="Download Resume">Resume</button>
@@ -107,11 +107,17 @@
 
             <section class="contact" id="contact">
                 <h2>Contact</h2>
-                <form class="form" action="contact.php" method="post">
-                    <input class="credentials" id="name" type="text" placeholder="Name">
-                    <input class="credentials" id="email" type="email" placeholder="Email">
-                    <textarea class="credentials message" id="message" placeholder="Message"></textarea>
-                    <button type="submit" value="Submit" aria-label="Send EMail">Send</button>
+                <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Add the Web3Forms access key dynamically -->
+                    <input type="hidden" id="access_key" name="access_key" value="">
+                    
+                    <!-- Existing form fields -->
+                    <input class="credentials" id="name" type="text" name="name" placeholder="Name" required>
+                    <input class="credentials" id="email" type="email" name="email" placeholder="Email" required>
+                    <textarea class="credentials message" id="message" name="message" placeholder="Message" required></textarea>
+                    
+                    <button type="submit" value="Submit" aria-label="Send Email">Send</button>
+                    <p id="form-message" style="display: none; margin-top: 10px;"></p>
                 </form>
             </section>
         </main>
@@ -126,115 +132,8 @@
             </div>
             <p>© 2021 copyright all right reserved</p>
         </footer>
-        <script >
-            particlesJS('particles-js',
-              {
-                "particles": {
-                  "number": {
-                    "value": 80,
-                    "density": {
-                      "enable": true,
-                      "value_area": 800
-                    }
-                  },
-                  "color": {
-                    "value": "#ffffff"
-                  },
-                  "shape": {
-                    "type": "circle",
-                    "stroke": {
-                      "width": 0,
-                      "color": "#000000"
-                    },
-                    "polygon": {
-                      "nb_sides": 5
-                    },
-                  },
-                  "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                      "enable": false,
-                      "speed": 40,
-                      "size_min": 0.1,
-                      "sync": false
-                    }
-                  },
-                  "opacity": {
-                    "value": 0.5,
-                    "random": false,
-                    "anim": {
-                      "enable": false,
-                      "speed": 1,
-                      "opacity_min": 0.1,
-                      "sync": false
-                    }
-                  },
-                  "line_linked": {
-                    "enable": true,  // Enable linked lines between particles
-                    "distance": 150,  // Maximum distance between linked particles
-                    "color": "#ffffff",  // Color of the lines
-                    "opacity": 0.4,  // Opacity of the lines
-                    "width": 1  // Width of the lines
-                  },
-                  "move": {
-                    "enable": true,  // Enable particle movement
-                    "speed": 6,  // Speed of particle movement
-                    "direction": "none",  // Direction of particle movement
-                    "random": false,  // Whether movement is random
-                    "straight": false,  // Whether particles move in straight lines
-                    "out_mode": "out",  // What happens when particles reach the edge of the canvas
-                    "bounce": false,  // Whether particles bounce off the edges of the canvas
-                    "attract": {  // Whether particles are attracted to each other
-                      "enable": false,
-                      "rotateX": 600,
-                      "rotateY": 1200
-                    }
-                  },
-                },
-                "interactivity": {
-                  "detect_on": "canvas",
-                  "events": {
-                    "onhover": {
-                      "enable": false,
-                      "mode": "repulse"
-                    },
-                    "onclick": {
-                      "enable": false,
-                      "mode": "push"
-                    },
-                    "resize": true
-                  },
-                  "modes": {
-                    "grab": {
-                      "distance": 400,
-                      "line_linked": {
-                        "opacity": 1
-                      }
-                    },
-                    "bubble": {
-                      "distance": 400,
-                      "size": 40,
-                      "duration": 2,
-                      "opacity": 8,
-                      "speed": 3
-                    },
-                    "repulse": {
-                      "distance": 200,
-                      "duration": 0.4
-                    },
-                    "push": {
-                      "particles_nb": 4
-                    },
-                    "remove": {
-                      "particles_nb": 2
-                    }
-                  }
-                },
-                "retina_detect": true
-              }
-            );
-        </script>
+        
+        <script src="script.js"></script>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
           var typed = new Typed('#auto-typing', {

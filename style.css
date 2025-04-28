@@ -353,6 +353,7 @@ hr{
 .project-grid a{
     text-decoration: none;
     color: white;
+    white-space: nowrap;
 }
 
 .project-grid div {
@@ -387,6 +388,15 @@ hr{
 
 #cont3::before{
     background-image: url("./images/proj3.png");
+}
+#cont4::before{
+    background-image: url("./images/proj4.png");
+}
+#cont5::before{
+    background-image: url("./images/proj5.png");
+}
+#cont6::before{
+    background-image: url("./images/proj6.png");
 }
 
 
@@ -505,6 +515,10 @@ hr{
 .contact button:hover{
     background-color: #a00f0f;
     transform: scale(1.05);
+}
+
+#form-message{
+    font-size: large;
 }
 
 .footer{
