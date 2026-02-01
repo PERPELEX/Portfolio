@@ -157,3 +157,32 @@ document
         "An unexpected error occurred. Please try again later.";
     }
   });
+
+  let scrollVelocity = 0;
+let scrollPosition = 0;
+const friction = 0.95;
+let animationId = null;  // Track active animation
+
+window.addEventListener('wheel', (e) => {
+  scrollVelocity = e.deltaY * 0.1;
+  
+  // Cancel previous animation if running
+  if (animationId !== null) {
+    cancelAnimationFrame(animationId);
+  }
+  
+  // Start new animation
+  animationId = requestAnimationFrame(applyInertiaScroll);
+}, { passive: true });
+
+function applyInertiaScroll() {
+  scrollPosition += scrollVelocity;
+  window.scrollBy(0, scrollVelocity);
+  scrollVelocity *= friction;
+  
+  if (Math.abs(scrollVelocity) > 0.1) {
+    animationId = requestAnimationFrame(applyInertiaScroll);
+  } else {
+    animationId = null;  // Reset when animation ends
+  }
+}

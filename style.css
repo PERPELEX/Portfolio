@@ -236,7 +236,7 @@ hr{
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 0 15.25%;
+    padding: 10% 15.25%;
     margin-top: 0%;
     
     padding-top: 6% ;
@@ -332,6 +332,10 @@ hr{
 
 #figma {
     color:#F24E1E;
+}
+
+#express {
+    color: #fff
 }
 
 .projects{
@@ -662,7 +666,7 @@ hr{
     }
 
     .skills{
-        padding-top: 12%;
+        padding: 12% 0 160% 0;
     }
 
     .skill-grid{
@@ -756,7 +760,7 @@ hr{
     }
 
     .skills{
-        padding: 20% 3% 0 3%;
+        padding: 20% 3% 100% 3%;
     }
 
     .skill-grid{
